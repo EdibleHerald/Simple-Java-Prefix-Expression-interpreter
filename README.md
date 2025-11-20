@@ -11,9 +11,10 @@ Example:
 For this project, I used the Stack data structure, A FIFO (First-in First-out) structure that in this case is perfect for the nuances that come with operator precedence. Each subsection here describes descriptions of the main methods I used and how I designed them.
 <details>
     <summary> Click me </summary>
+    <br></br>
     ### prefixOperation(String[] input)
 
-    This method implements the stacks to accurately evaluate the given expression (in String[] form).
+     This method implements the stacks to accurately evaluate the given expression (in String[] form).
 
     I use two stacks called "mainStack" and "secondStack" respectively (which I'll call mS and sS from now on). A loop reads the given String[] array (which is assumed to be correctly formatted by this point) and adds each element to mS.
     Example:
