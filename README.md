@@ -2,15 +2,16 @@
 This short program is able to evaluate basic arithmetic expressions in Prefix or Postfix form. It can maintain operation order and is implemented using the Stack data structure.
 
 Example:
-\+ \+ 45 2 10 = 45 + 2 + 10
-\+ \* 5 2 3 = (5 * 2) + 3
-\+ \+ 6 * 3 2 7 = 6 + (3 * 2) + 7
+\+ \+ 45 2 10 = 45 + 2 + 10 <br>
+\+ \* 5 2 3 = (5 * 2) + 3 <br>
+\+ \+ 6 * 3 2 7 = 6 + (3 * 2) + 7 <br>
 
 ## Implementation 
 
 For this project, I used the Stack data structure, A FIFO (First-in First-out) structure that in this case is perfect for the nuances that come with operator precedence. Each subsection here describes descriptions of the main methods I used and how I designed them.
 <details>
-    <summary> Click me </summary> <br>
+    <summary> Click me </summary>
+
     ### prefixOperation(String[] input)
 
         This method implements the stacks to accurately evaluate the given expression (in String[] form).
