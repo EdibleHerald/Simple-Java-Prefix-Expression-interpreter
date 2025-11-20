@@ -18,6 +18,7 @@ For this project, I used the Stack data structure, A FIFO (First-in First-out) s
 
   I use two stacks called "mainStack" and "secondStack" respectively (which I'll call mS and sS from now on). A loop reads the given String[] array (which is assumed to be correctly formatted by this point) and adds each element to mS.
   Example:
+  
          main stack   second stack
              [3]           [ ]
              [5]           [ ]
@@ -25,6 +26,7 @@ For this project, I used the Stack data structure, A FIFO (First-in First-out) s
              [*]           [ ]
              [-]           [ ]
   The method then pops integers off the mS and adds them to sS. Once an operator is popped off main stack, it pops two integers off second stack and runs the operation. The result gets added back to second stack.
+
          main stack   second stack
              [ ]           [ ]
              [ ]           [ ]
