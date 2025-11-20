@@ -128,6 +128,7 @@ For this project, I used the Stack data structure, A FIFO (First-in First-out) s
 
      returns: nothing (void)
    </details>
+</details>
 
 ### Final Comments
 
