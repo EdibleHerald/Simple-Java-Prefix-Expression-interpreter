@@ -12,15 +12,15 @@ For this project, I used the Stack data structure, A FIFO (First-in First-out) s
 <details>
  <summary> See Method Descriptions Here! </summary>
  
- <details>
-  <summary> prefixOperation Method </summary>
+ * <details>
+    <summary> prefixOperation Method </summary>
 
-  ### prefixOperation(String[] input)
+    ### prefixOperation(String[] input)
 
-   This method implements the stacks to accurately evaluate the given expression (in String[] form).
+     This method implements the stacks to accurately evaluate the given expression (in String[] form).
 
-   I use two stacks called "mainStack" and "secondStack" respectively (which I'll call mS and sS from now on). A loop reads the given String[] array (which is assumed to be correctly formatted by this point) and adds each element to mS.
-   Example:
+     I use two stacks called "mainStack" and "secondStack" respectively (which I'll call mS and sS from now on). A loop reads the given String[] array (which is assumed to be correctly formatted by this point) and adds each element to mS.
+     Example:
 
          main stack   second stack
              [3]           [ ]
@@ -28,7 +28,7 @@ For this project, I used the Stack data structure, A FIFO (First-in First-out) s
              [2]           [ ]
              [*]           [ ]
              [-]           [ ]
-   The method then pops integers off the mS and adds them to sS. Once an operator is popped off main stack, it pops two integers off second stack and runs the operation. The result gets added back to second stack.
+     The method then pops integers off the mS and adds them to sS. Once an operator is popped off main stack, it pops two integers off second stack and runs the operation. The result gets added back to second stack.
 
          main stack   second stack
              [ ]           [ ]
@@ -45,15 +45,15 @@ For this project, I used the Stack data structure, A FIFO (First-in First-out) s
              [ ]           [10]
              [-]           [3]
              10 - 3 = 7
-   Once nothing is left in mS, the method returns the resulting integer. 
+     Once nothing is left in mS, the method returns the resulting integer. 
 
-   After creating this implementation, I found out that the more efficient solution is to skip the creation of a "mainStack" in favor of just reading off the already parsed and ordered array. I only keep my current implementation because its what I was able to come up with.
- </details>
+     After creating this implementation, I found out that the more efficient solution is to skip the creation of a "mainStack" in favor of just reading off the already parsed and ordered array. I only keep my current implementation because its what I was able to come up with.
+   </details>
 
- <details>
-  <summary></summary>
+ * <details>
+    <summary>stringToArray Method</summary>
 
-  ### stringToArray(String input)
+    ### stringToArray(String input)
 
-   This method takes an assumed prefix form expression and break it up into seperate elements to be processed by prefixOperation
-</details>
+     This method takes an assumed prefix form expression and break it up into seperate elements to be processed by prefixOperation
+   </details>
